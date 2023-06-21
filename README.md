@@ -1,3 +1,7 @@
+# vercel preview link
+
+https://personal-task-clw7n8id6-yjbaek29-gmailcom.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,38 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+
+* {
+  font-family: "Poor Story", cursive;
+}
+
+html {
+  background-color: #ebebeb;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.content {
+  height: 800px;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+}
+
+header div {
+  font-size: 2.5em;
+}
+
+.h {
+  font-size: 60px;
+}
+.h2 {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+.h3 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 140px;
+  height: 40px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+  border-style: none;
+  font-size: calc(8px + 1vmin);
+  border-radius: 5px;
+}
+
+.deleteBtn {
+  background-color: #151822;
+}
+
+.doneBtn {
+  background-color: #809dff;
+}
+
+.backToWorkBtn {
+  background-color: #ff8080;
+}
+
+.inputSection {
+  width: 750px;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 20px 35px 20px;
+  margin-bottom: 35px;
+  box-shadow: 1px 5px 5px #c6c6c6;
+}
+
+.inputTitle {
+  width: 680px;
+  height: 40px;
+  font-size: 25px;
+}
+
+.inputContext {
+  width: 680px;
+  height: 200px;
+  font-size: 25px;
+  word-break: break-all;
+}
+
+select {
+  width: 680px;
+}
+
+.inputSection div {
+  margin-top: 10px;
+}
+
+.mainBtn {
+  font-weight: 600;
+  font-size: calc(10px + 1vmin);
+  width: 340px;
+  height: 47px;
+  background-color: #809dff;
   color: white;
+  margin-top: 40px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.workingCardsSection,
+.doneCardsSection {
+  background-color: #ebebeb;
+  display: block;
+  float: left;
+  padding: 20px;
+}
+
+.cardStyle {
+  border-radius: 12px;
+  background-color: white;
+  display: inline;
+  flex-direction: row;
+  color: #151822;
+  border: 3px solid #151822;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  /* 카드 가로 정렬 */
+  float: left;
+  padding: 30px;
+  width: 300px;
+  justify-content: space-between;
+  /* 기본 폰트 크기를 10px로 설정하고, 뷰포트의 크기에 따라 2vmin만큼 폰트 크기를 추가로 조정하는 반응형 스타일 */
+  font-size: calc(10px + 1.5vmin);
+}
+
+.cardTitle {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: calc(25px + 2vmin);
+}
+
+.cardContext {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: calc(8px + 2vmin);
+  margin-bottom: 28px;
+}
+
+.cardBtnArea {
+  padding: 100% auto;
+}
+
+/* 반응형 카드 사이즈 변경 아래로만 챡챡 쌓이게 */
+@media (max-width: 850px) {
+  .cardStyle {
+    border-radius: 12px;
+    background-color: white;
+    display: inline;
+    flex-direction: row;
+    color: #151822;
+    border: 3px solid #151822;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    /* 카드 가로 정렬 */
+    float: left;
+    padding: 30px;
+    width: 700px;
+    justify-content: space-between;
+    /* 기본 폰트 크기를 10px로 설정하고, 뷰포트의 크기에 따라 2vmin만큼 폰트 크기를 추가로 조정하는 반응형 스타일 */
+    font-size: calc(10px + 1.5vmin);
   }
 }
